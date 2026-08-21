@@ -1,34 +1,79 @@
-<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.3.6 Chrome/140.0.7339.249 Electron/38.8.0 Safari/537.36" version="29.3.6">
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.3.6 Chrome/140.0.7339.249 Electron/38.8.0 Safari/537.36">
   <diagram id="proceso-sistema" name="Proceso Con Sistema (CineMax)">
-    <mxGraphModel dx="1579" dy="767" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="826" math="0" shadow="0">
+    <mxGraphModel dx="1900" dy="816" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="826" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="pool2s" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=1;collapsible=1;marginBottom=0;strokeColor=#666666;fillColor=#f5f5f5;whiteSpace=wrap;html=1;" value="Proceso con Sistema: Compra de boletos WEB CineMax CESDE" vertex="1">
-          <mxGeometry height="610" width="1220" x="10" y="10" as="geometry">
+          <mxGeometry height="610" width="1470" x="20" y="130" as="geometry">
             <mxRectangle height="30" width="450" x="40" y="60" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="lane1s" parent="pool2s" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;startSize=40;horizontalStack=0;verticalAlign=top;fontStyle=1;fillColor=#ffffff;strokeColor=#666666;" value="Cliente" vertex="1">
-          <mxGeometry height="284" width="1220" y="26" as="geometry" />
+        <mxCell id="e_s8_s9end" edge="1" parent="pool2s" source="s8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;html=1;" target="s9end">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="s1" parent="lane1s" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Cliente ingresa a la web CineMax" vertex="1">
+        <mxCell id="lane1s" parent="pool2s" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;startSize=40;horizontalStack=0;verticalAlign=top;fontStyle=1;fillColor=light-dark(#FFFFFF,#CCFFCC);strokeColor=#666666;shadow=1;" value="Cliente" vertex="1">
+          <mxGeometry height="284" width="1470" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="fxt3zbeX0OSegGiO14SE-10" edge="1" parent="lane1s" source="s1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="fxt3zbeX0OSegGiO14SE-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s1" parent="lane1s" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#000000;" value="Cliente" vertex="1">
           <mxGeometry height="50" width="130" x="50" y="125" as="geometry" />
         </mxCell>
         <mxCell id="s2" parent="lane1s" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Cliente navega la cartelera digital" vertex="1">
-          <mxGeometry height="40" width="170" x="220" y="130" as="geometry" />
+          <mxGeometry height="40" width="170" x="440" y="24" as="geometry" />
         </mxCell>
         <mxCell id="s3" parent="lane1s" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Cliente selecciona película y boletos" vertex="1">
           <mxGeometry height="40" width="190" x="430" y="130" as="geometry" />
         </mxCell>
-        <mxCell id="s7pay" parent="lane1s" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Cliente paga online" vertex="1">
-          <mxGeometry height="40" width="160" x="840" y="125" as="geometry" />
+        <mxCell id="s7pay" parent="lane1s" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Cliente paga en punto" vertex="1">
+          <mxGeometry height="40" width="160" x="840" y="184" as="geometry" />
         </mxCell>
-        <mxCell id="s9end" parent="lane1s" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="Cliente recibe confirmación y va al cine" vertex="1">
-          <mxGeometry height="60" width="100" x="1110" y="112" as="geometry" />
+        <mxCell id="s9end" parent="lane1s" style="ellipse;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#000000;" value="Cliente recibe boleto" vertex="1">
+          <mxGeometry height="60" width="120" x="1110" y="112" as="geometry" />
+        </mxCell>
+        <mxCell id="fxt3zbeX0OSegGiO14SE-12" edge="1" parent="lane1s" source="fxt3zbeX0OSegGiO14SE-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="fxt3zbeX0OSegGiO14SE-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fxt3zbeX0OSegGiO14SE-13" connectable="0" parent="fxt3zbeX0OSegGiO14SE-12" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="NO" vertex="1">
+          <mxGeometry relative="1" x="-0.1866" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fxt3zbeX0OSegGiO14SE-8" parent="lane1s" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="Usa APP?" vertex="1">
+          <mxGeometry height="60" width="120" x="55" y="34" as="geometry" />
+        </mxCell>
+        <mxCell id="e_s1_s2" edge="1" parent="lane1s" source="fxt3zbeX0OSegGiO14SE-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="s2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="115" y="14" />
+              <mxPoint x="525" y="14" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fxt3zbeX0OSegGiO14SE-9" connectable="0" parent="e_s1_s2" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="SI" vertex="1">
+          <mxGeometry relative="1" x="-0.6535" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fxt3zbeX0OSegGiO14SE-15" edge="1" parent="lane1s" source="fxt3zbeX0OSegGiO14SE-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="fxt3zbeX0OSegGiO14SE-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fxt3zbeX0OSegGiO14SE-11" parent="lane1s" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Cliente hace fila en taquilla" vertex="1">
+          <mxGeometry height="40" width="160" x="230" y="132" as="geometry" />
+        </mxCell>
+        <mxCell id="fxt3zbeX0OSegGiO14SE-14" parent="lane1s" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Cliente indica película y función" vertex="1">
+          <mxGeometry height="40" width="160" x="230" y="204" as="geometry" />
+        </mxCell>
+        <mxCell id="fxt3zbeX0OSegGiO14SE-26" parent="lane1s" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Cliente paga en linea" vertex="1">
+          <mxGeometry height="40" width="160" x="840" y="85" as="geometry" />
+        </mxCell>
+        <mxCell id="s6end" parent="lane1s" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="Cliente se retira o cambia de función" vertex="1">
+          <mxGeometry height="60" width="130" x="1260" y="115" as="geometry" />
         </mxCell>
         <mxCell id="lane2s" parent="pool2s" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;startSize=40;horizontalStack=0;verticalAlign=top;fontStyle=1;fillColor=#ffffff;strokeColor=#666666;" value="Sistema CineMax" vertex="1">
-          <mxGeometry height="300" width="1220" y="310" as="geometry" />
+          <mxGeometry height="300" width="1470" y="310" as="geometry" />
         </mxCell>
         <mxCell id="s4" parent="lane2s" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Sistema valida datos (nombre, boletos, edad)" vertex="1">
           <mxGeometry height="40" width="190" x="430" y="130" as="geometry" />
@@ -37,13 +82,10 @@
           <mxGeometry height="60" width="150" x="650" y="120" as="geometry" />
         </mxCell>
         <mxCell id="s6" parent="lane2s" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Sistema bloquea la reserva y muestra mensaje" vertex="1">
-          <mxGeometry height="40" width="180" x="830" y="230" as="geometry" />
+          <mxGeometry height="40" width="180" x="635" y="230" as="geometry" />
         </mxCell>
-        <mxCell id="s6end" parent="lane2s" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="Cliente corrige los datos" vertex="1">
-          <mxGeometry height="60" width="130" x="1060" y="220" as="geometry" />
-        </mxCell>
-        <mxCell id="s7calc" parent="lane2s" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Sistema calcula subtotal y descuento (10%)" vertex="1">
-          <mxGeometry height="40" width="180" x="830" y="50" as="geometry" />
+        <mxCell id="s7calc" parent="lane2s" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Sistema calcula precio a pagar" vertex="1">
+          <mxGeometry height="40" width="180" x="635" y="10" as="geometry" />
         </mxCell>
         <mxCell id="s8" parent="lane2s" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Sistema genera confirmación y ticket digital" vertex="1">
           <mxGeometry height="40" width="180" x="960" y="130" as="geometry" />
@@ -57,10 +99,13 @@
             <mxPoint x="520" y="260" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="e_s8_s9end" edge="1" parent="pool2s" source="s8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;html=1;" target="s9end">
+        <mxCell id="e_s7calc_s7pay" edge="1" parent="pool2s" source="s7calc" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;html=1;" target="fxt3zbeX0OSegGiO14SE-26">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e_s1_s2" edge="1" parent="1" source="s1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="s2">
+        <mxCell id="e_s7pay_s8" edge="1" parent="pool2s" source="fxt3zbeX0OSegGiO14SE-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;html=1;" target="s8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_s6_s6end" edge="1" parent="pool2s" source="s6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="s6end">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="e_s2_s3" edge="1" parent="1" source="s2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="s3">
@@ -75,20 +120,65 @@
         <mxCell id="e_s4_d1" edge="1" parent="1" source="s4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;html=1;dashed=1;" target="d1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e_s5_s6" edge="1" parent="1" source="s5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;html=1;fontColor=#b85450;fontStyle=1;" target="s6" value="No">
+        <mxCell id="e_s5_s6" edge="1" parent="1" source="s5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;html=1;fontColor=#b85450;fontStyle=1;" target="s6" value="No">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e_s6_s6end" edge="1" parent="1" source="s6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="s6end">
+        <mxCell id="e_s5_s7calc" edge="1" parent="1" source="s5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;html=1;fontColor=#82b366;fontStyle=1;" target="s7calc" value="Sí">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e_s5_s7calc" edge="1" parent="1" source="s5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;html=1;fontColor=#82b366;fontStyle=1;" target="s7calc" value="Sí">
+        <mxCell id="fxt3zbeX0OSegGiO14SE-1" parent="1" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;startSize=40;horizontalStack=0;verticalAlign=top;fontStyle=1;fillColor=#ffffff;strokeColor=#666666;" value="Cajero / Taquilla" vertex="1">
+          <mxGeometry height="300" width="1470" x="20" y="740" as="geometry" />
+        </mxCell>
+        <mxCell id="fxt3zbeX0OSegGiO14SE-17" edge="1" parent="fxt3zbeX0OSegGiO14SE-1" source="fxt3zbeX0OSegGiO14SE-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="fxt3zbeX0OSegGiO14SE-3">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e_s7calc_s7pay" edge="1" parent="1" source="s7calc" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;html=1;" target="s7pay">
+        <mxCell id="fxt3zbeX0OSegGiO14SE-2" parent="fxt3zbeX0OSegGiO14SE-1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Cajero verifica disponibilidad y precio" vertex="1">
+          <mxGeometry height="40" width="170" x="225" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="fxt3zbeX0OSegGiO14SE-18" edge="1" parent="fxt3zbeX0OSegGiO14SE-1" source="fxt3zbeX0OSegGiO14SE-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="fxt3zbeX0OSegGiO14SE-6">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e_s7pay_s8" edge="1" parent="1" source="s7pay" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;html=1;" target="s8">
+        <mxCell id="fxt3zbeX0OSegGiO14SE-19" connectable="0" parent="fxt3zbeX0OSegGiO14SE-18" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="SI" vertex="1">
+          <mxGeometry relative="1" x="0.1655" y="-2" as="geometry">
+            <mxPoint x="14" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fxt3zbeX0OSegGiO14SE-20" edge="1" parent="fxt3zbeX0OSegGiO14SE-1" source="fxt3zbeX0OSegGiO14SE-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="fxt3zbeX0OSegGiO14SE-4">
           <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fxt3zbeX0OSegGiO14SE-21" connectable="0" parent="fxt3zbeX0OSegGiO14SE-20" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="NO" vertex="1">
+          <mxGeometry relative="1" x="0.2679" y="2" as="geometry">
+            <mxPoint x="13" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fxt3zbeX0OSegGiO14SE-3" parent="fxt3zbeX0OSegGiO14SE-1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="¿Hay disponibilidad?" vertex="1">
+          <mxGeometry height="60" width="140" x="610" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="fxt3zbeX0OSegGiO14SE-4" parent="fxt3zbeX0OSegGiO14SE-1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Cajero informa que no hay cupo" vertex="1">
+          <mxGeometry height="40" width="170" x="730" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="fxt3zbeX0OSegGiO14SE-6" parent="fxt3zbeX0OSegGiO14SE-1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Cajero indica el precio al cliente" vertex="1">
+          <mxGeometry height="40" width="170" x="730" y="46" as="geometry" />
+        </mxCell>
+        <mxCell id="fxt3zbeX0OSegGiO14SE-7" parent="fxt3zbeX0OSegGiO14SE-1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Cajero imprime boleto" vertex="1">
+          <mxGeometry height="40" width="120" x="1000" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="fxt3zbeX0OSegGiO14SE-16" edge="1" parent="1" source="fxt3zbeX0OSegGiO14SE-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="fxt3zbeX0OSegGiO14SE-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fxt3zbeX0OSegGiO14SE-23" edge="1" parent="1" source="fxt3zbeX0OSegGiO14SE-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="s7pay">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fxt3zbeX0OSegGiO14SE-24" edge="1" parent="1" source="s7pay" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.669;exitY=0.999;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitPerimeter=0;" target="fxt3zbeX0OSegGiO14SE-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fxt3zbeX0OSegGiO14SE-25" edge="1" parent="1" source="fxt3zbeX0OSegGiO14SE-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=1;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="s9end">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fxt3zbeX0OSegGiO14SE-22" edge="1" parent="1" source="fxt3zbeX0OSegGiO14SE-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=1;entryDx=0;entryDy=0;" target="s6end">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1020" y="990" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>

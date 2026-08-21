@@ -1,16 +1,16 @@
-<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.3.6 Chrome/140.0.7339.249 Electron/38.8.0 Safari/537.36" pages="2">
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.3.6 Chrome/140.0.7339.249 Electron/38.8.0 Safari/537.36" version="29.3.6" pages="2">
   <diagram id="proceso-actual" name="Proceso Actual (Sin Sistema)">
-    <mxGraphModel dx="1330" dy="571" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="826" math="0" shadow="0">
+    <mxGraphModel dx="1381" dy="671" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="826" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="pool1" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=1;collapsible=1;marginBottom=0;strokeColor=#666666;fillColor=#f5f5f5;whiteSpace=wrap;html=1;" value="Proceso Actual: Compra de boletos SIN sistema (Proceso de negocio actual)" vertex="1">
-          <mxGeometry height="610" width="1360" x="10" y="10" as="geometry">
+          <mxGeometry height="610" width="1220" x="10" y="10" as="geometry">
             <mxRectangle height="30" width="450" x="40" y="60" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
         <mxCell id="lane1c" parent="pool1" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;startSize=40;horizontalStack=0;verticalAlign=top;fontStyle=1;fillColor=#ffffff;strokeColor=#666666;" value="Cliente" vertex="1">
-          <mxGeometry height="284" width="1360" y="26" as="geometry" />
+          <mxGeometry height="284" width="1220" y="26" as="geometry" />
         </mxCell>
         <mxCell id="c1" parent="lane1c" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Cliente llega al cine" vertex="1">
           <mxGeometry height="40" width="130" x="40" y="130" as="geometry" />
@@ -24,9 +24,6 @@
         <mxCell id="c7" parent="lane1c" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Cliente paga en efectivo" vertex="1">
           <mxGeometry height="40" width="160" x="880" y="125" as="geometry" />
         </mxCell>
-        <mxCell id="e1" parent="lane1c" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="Cliente se retira o cambia de función" vertex="1">
-          <mxGeometry height="60" width="130" x="1220" y="115" as="geometry" />
-        </mxCell>
         <mxCell id="e_k6_c7" edge="1" parent="pool1" source="k6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;html=1;" target="c7">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
@@ -34,7 +31,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="lane2c" parent="pool1" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;startSize=40;horizontalStack=0;verticalAlign=top;fontStyle=1;fillColor=#ffffff;strokeColor=#666666;" value="Cajero / Taquilla" vertex="1">
-          <mxGeometry height="300" width="1360" y="310" as="geometry" />
+          <mxGeometry height="300" width="1220" y="310" as="geometry" />
         </mxCell>
         <mxCell id="k4" parent="lane2c" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Cajero verifica disponibilidad y precio" vertex="1">
           <mxGeometry height="40" width="170" x="410" y="130" as="geometry" />
@@ -45,14 +42,14 @@
         <mxCell id="k5" parent="lane2c" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Cajero informa que no hay cupo" vertex="1">
           <mxGeometry height="40" width="170" x="750" y="230" as="geometry" />
         </mxCell>
+        <mxCell id="e1" parent="lane2c" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="Cliente se retira o cambia de función" vertex="1">
+          <mxGeometry height="60" width="130" x="1000" y="220" as="geometry" />
+        </mxCell>
         <mxCell id="k6" parent="lane2c" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Cajero indica el precio al cliente" vertex="1">
           <mxGeometry height="40" width="170" x="750" y="50" as="geometry" />
         </mxCell>
-        <mxCell id="k8" parent="lane2c" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Cajero imprime boleto físico" vertex="1">
+        <mxCell id="k8" parent="lane2c" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Cajero entrega boleto físico" vertex="1">
           <mxGeometry height="40" width="120" x="1000" y="130" as="geometry" />
-        </mxCell>
-        <mxCell id="e_k5_e1" edge="1" parent="pool1" source="k5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="e1">
-          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="e_c1_c2" edge="1" parent="1" source="c1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="c2">
           <mxGeometry relative="1" as="geometry" />
@@ -69,10 +66,13 @@
         <mxCell id="e_g1_k5" edge="1" parent="1" source="g1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;html=1;fontColor=#b85450;fontStyle=1;" target="k5" value="No">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="e_k5_e1" edge="1" parent="1" source="k5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="e1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="e_g1_k6" edge="1" parent="1" source="g1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;html=1;fontColor=#82b366;fontStyle=1;" target="k6" value="Sí">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="c9" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="Cliente recibe su boleto" vertex="1">
+        <mxCell id="c9" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="Cliente ingresa a la sala con su boleto" vertex="1">
           <mxGeometry height="60" width="120" x="1100" y="151" as="geometry" />
         </mxCell>
         <mxCell id="e_k8_c9" edge="1" parent="1" source="k8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;html=1;" target="c9">
