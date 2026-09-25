@@ -1,0 +1,1 @@
+identificar lo que nos gusta, y vamos aidentificar los probelmas 
